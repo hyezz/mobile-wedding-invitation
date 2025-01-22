@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+/* 네이버 지도, 카카오맵 */
 const Button = styled.button`
   //font-family: HSSanTokki20-Regular, serif;
   padding: 0.5em 0.8em;

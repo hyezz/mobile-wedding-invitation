@@ -19,7 +19,7 @@ const Accordion = ({ title, children }: IAccordionProps) => {
         <p>{title}</p>
 
         <span>
-          <ExpandMore fill="#e88ca6" />
+          <ExpandMore fill="#4D4447" />
         </span>
       </AccordionHeader>
 
@@ -30,8 +30,9 @@ const Accordion = ({ title, children }: IAccordionProps) => {
 
 export default Accordion;
 
+/* lhj 신랑측 신부측 */
 const AccordionWrapper = styled.div`
-  font-family: HSSanTokki20-Regular, serif;
+  font-family: Gyeonggi_Batang_Regular, serif;
   border: 1px solid #e6ece1;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -43,11 +44,11 @@ const AccordionHeader = styled.div<{ isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e6ece1;
+  background-color: #EFF2EB;
   padding: 0 15px;
   cursor: pointer;
   & > p {
-    color: #44484d;
+    color:rgb(77, 68, 71);
   }
   & > span {
     display: flex;
@@ -63,5 +64,5 @@ const AccordionContent = styled.div`
   font-size: 14px;
   text-align: justify;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #fffdf3;
 `;

@@ -25,7 +25,7 @@ export default Address;
 const WayWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin: 20px 0px;
   gap: 20px;
 `;
@@ -33,5 +33,5 @@ const WayWrapper = styled.div`
 const Way = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 `;

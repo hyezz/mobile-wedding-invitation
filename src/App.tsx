@@ -43,7 +43,6 @@ function App() {
           <Main />
         </Wrapper>
         <Wrapper>
-          <Heading1>모시는 글</Heading1>
           <Invitation />
         </Wrapper>
         <Wrapper ref={galleryRef}>

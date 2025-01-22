@@ -3,24 +3,19 @@ import data from 'data.json';
 import Host from '../Contact/Host.tsx';
 import RoundButton from '@/components/RoundButton.tsx';
 import { Caption, Paragraph } from '@/components/Text.tsx';
+import calendarImg from '@/assets/images/calendar.png';
 
-const Invitation = () => {
+function Invitation() {
   const { greeting } = data;
   return (
     <InvitationWrapper>
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
       <Caption textAlign={'center'}>{greeting.eventDetail}</Caption>
-      {/* TODO: 구글캘린더 추가하기 기능을 넣는다면 링크 수정 */}
-      <RoundButton
-        target="_blank"
-        href=""
-        rel="noreferrer">
-        구글 캘린더 추가하기
-      </RoundButton>
+      <CalendarImg src={calendarImg} />
     </InvitationWrapper>
   );
-};
+}
 
 export default Invitation;
 
@@ -29,4 +24,11 @@ const InvitationWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+`;
+
+const CalendarImg = styled.img`
+  /*border-radius: 200px 200px 0 0;*/
+  width: 100%;
+  max-width: 450px;
+  /*padding-top: 20px;*/
 `;
